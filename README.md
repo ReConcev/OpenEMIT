@@ -27,7 +27,7 @@
 * **Serverless Scaling and High Availability (HA)**
 * **CQRS Polyglot Persistence**
 
-### [Design](docs/design.md) & [Architecture](docs/architecture.md)
+### [Design](docs/design.md) & [Architecture](https://hackmd.io/@cudl/rk1cstgRj)
 
 ### [FAQ](docs/FAQ.md)
 ***
