@@ -9,7 +9,7 @@
 ***
 ### [Briefing](docs/briefing.md)
 
-### [Value Proposition](docs/value.md)
+### [Value Proposition](https://hackmd.io/@cudl/rkb5JsTTo)
 > Create an API standard with performance bennchmarks <br/>
 > for event-driven application development<br/>
 > with "just enough framework" to support<br/>
