@@ -34,4 +34,4 @@
 ## Join the Community
 * **Adopt:** Write you next application using ***OpenEMIT***
 * **Sponsor:** Integrate/Certify your Product 
-* **Develop:** [Event Thinking](docs/event-thinking.md) Rust Developers are always welcome
+* **Develop:** [Event Thinking](https://hackmd.io/@cudl/r1j-2-I2f) Rust Developers are always welcome
