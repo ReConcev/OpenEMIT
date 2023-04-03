@@ -7,9 +7,9 @@
 > for events, distributed logs, object stores, FaaS and blockchain (DLT).<br/>
 > `// Coded in Rust`
 ***
-### [Briefing](docs/briefing.md)
+### [Briefing](https://hackmd.io/@cudl/BkP3Z2oyh)
 
-### [Value Proposition](docs/value.md)
+### [Value Proposition](https://hackmd.io/@cudl/rkb5JsTTo)
 > Create an API standard with performance bennchmarks <br/>
 > for event-driven application development<br/>
 > with "just enough framework" to support<br/>
@@ -27,11 +27,11 @@
 * **Serverless Scaling and High Availability (HA)**
 * **CQRS Polyglot Persistence**
 
-### [Design](docs/design.md) & [Architecture](docs/architecture.md)
+### [Design](https://hackmd.io/@cudl/S1uWCAX0s) & [Architecture](https://hackmd.io/@cudl/rk1cstgRj)
 
-### [FAQ](docs/FAQ.md)
+### [Why use Event-Driven Architecture (EDA)?](https://hackmd.io/@cudl/SkDOaQXgh)
 ***
 ## Join the Community
-* **Adopt:** Write you next application using ***OpenEMIT***
-* **Sponsor:** Integrate/Certify your Product 
-* **Develop:** [Event Thinking](docs/event-thinking.md) Rust Developers are always welcome
+* **Customers:** Write you next application using ***OpenEMIT***
+* **Vendors:** Integrate/Certify your Product 
+* **Develop:** [Event Thinking](https://hackmd.io/@cudl/r1j-2-I2f) Rust Developers are always welcome
