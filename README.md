@@ -7,7 +7,7 @@
 > for events, distributed logs, object stores, FaaS and blockchain (DLT).<br/>
 > `// Coded in Rust`
 ***
-### [Briefing](docs/briefing.md)
+### [Briefing](https://hackmd.io/@cudl/S1uWCAX0s)
 
 ### [Value Proposition](https://hackmd.io/@cudl/rkb5JsTTo)
 > Create an API standard with performance bennchmarks <br/>
