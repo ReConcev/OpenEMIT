@@ -7,7 +7,7 @@
 > for events, distributed logs, object stores, FaaS and blockchain (DLT).<br/>
 > `// Coded in Rust`
 ***
-### [Briefing](https://hackmd.io/@cudl/S1uWCAX0s)
+### [Briefing](https://hackmd.io/@cudl/BkP3Z2oyh)
 
 ### [Value Proposition](https://hackmd.io/@cudl/rkb5JsTTo)
 > Create an API standard with performance bennchmarks <br/>
@@ -27,9 +27,9 @@
 * **Serverless Scaling and High Availability (HA)**
 * **CQRS Polyglot Persistence**
 
-### [Design](docs/design.md) & [Architecture](https://hackmd.io/@cudl/rk1cstgRj)
+### [Design](https://hackmd.io/@cudl/S1uWCAX0s) & [Architecture](https://hackmd.io/@cudl/rk1cstgRj)
 
-### [FAQ](docs/FAQ.md)
+### [FAQ]()
 ***
 ## Join the Community
 * **Adopt:** Write you next application using ***OpenEMIT***
