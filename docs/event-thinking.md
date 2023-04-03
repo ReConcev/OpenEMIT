@@ -1,22 +1,13 @@
 # "Event Thinking" -- The Hollywood Principle
 
-
-|![Wolfman Jack 1977](https://i.imgur.com/7uIHXLo.jpg =190x) | <iframe width="150" height="99" src="https://www.youtube.com/embed/i4njPe2_rho" frameborder="0"></iframe><p><p>Wolfman Jack says:<p/><p/>"Don't call us.<br/>  &nbsp; &nbsp; &nbsp; &nbsp; We'll call you." |
+| <a href="https://www.youtube.com/embed/i4njPe2_rho" target="_blank"> <img src="https://i.imgur.com/7uIHXLo.jpg" alt="Wolfman Jack" width="150" height="150" border="10" /> </a> | "Don't call us.<br/>  &nbsp; &nbsp; &nbsp; &nbsp; We'll call you." |
 | -- | -- |
-
->###### tags: `streaming` `actor` `EDA`
->
->[name=Author: George Willis] [time=Thu, Apr 19, 2018]
 
 ---
 
 ### What is the Hollywood Principle?
 An **"Inversion of Invocation" design pattern** (for those familiar with the IoC design pattern.)
-
-
-::: info
-:trophy: Transform "<u>**Explicit Invocations**</u>" into "<u>**Implicit Invocations**</u>"
-:::
+#### Transform "<u>**Explicit Invocations**</u>" into "<u>**Implicit Invocations**</u>"
 
 ### Explicit Invocation
 "The way you do it now."
@@ -46,30 +37,24 @@ add(resultCallback(),1,2)  // Async style
         *  Timeout Exceptions (Identify)
         *  Recover to previous workflow "state" and restart from waypoint (Remediate)
 
-:::danger
 ### :rotating_light: &nbsp; "Wait -- we don't program around state transitions any more than we invoke asynchronously!
 
 #### We need to rethink distributed state from the ground up!
-:::
 
 ### Software Evolution
 * **Embarrasing industry trends**
-  * Majority of POs state:
+  * Majority of Product Owners state:
     * (temporal) quality goes down with each release
     * (capacity) quality goes down as system grows (scaling)
   * Many IT shops adopt a "fair of failure" mentality and "sunset" systems based on refactoring not requirements
 
-:::info
 :key:Technical debt of refactoring and extending is too high
-:::
 
 ### Implicit Invocation ("We'll call you")
 
-::: info
 **A foundational shift -- what Gartner calls "*Event Thinking***". </br>
 **Publish/Listen** -- a cousin to **Pub/Sub**</br>
 Think "Hooks" for <u>loose coupling</u> &nbsp; :fishing_pole_and_fish: 
-:::
 
 * #### Hook ![Hook](https://upload.wikimedia.org/wikipedia/commons/f/f9/Grappling_hook_%28PSF%29.png =60x30):    I'll use {--- in homage to markdown :smile:
 ```
@@ -101,7 +86,6 @@ dataCollectedEvent.publish(Users.Create)  // Emit trigger event
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/v1MS2Eas1qo" frameborder="0"></iframe>
 
-:::info
 **Evolutionary Architectural Style -- <u>Achieves loose-coupling of autonomous execution bundles</u>** (container runtimes) by moving coupling from "callers" (a.k.a. Commanders, Orchestrators) to <u>autonomous listeners</u> known as Actors (Choreography, flocks of birds). Each Actor hooks into an event stream. &nbsp; :fishing_pole_and_fish: 
 
   * Extend via new hooks to existing events without impacting existing workflows -- just like in ETL
@@ -113,7 +97,6 @@ dataCollectedEvent.publish(Users.Create)  // Emit trigger event
     *  add additional machinery, complexity, latency and resource utilization to an otherwise lean microprocess
 
   *  #### Solves coupling issues at the fundamental and foundational level -- invocation.
-:::
 
 * **Naturally Async()** -- no "blocking"
   * Foundationally faster and more efficient
@@ -136,19 +119,14 @@ dataCollectedEvent.publish(Users.Create)  // Emit trigger event
 
   * An autonomous (atomically isolation) multi-tasking environment is required.  This is why **Container Multitenancy** is another **"Pillar of Digital Transformation"**
 
-:::info
 * **Naturally BPM Aligned:** Naturally Decomposes Business Processes/Steps into Topics/Events
-:::
 
 # Event-Driven Architecture
-:::success
  :dart: **"Event-Driven Architecture is the optimal and natural solution to Recovery, Scaling and Velocity  -- Event Thinking, the foundation of true Digital Transformation."</br> ~-George~ ~Willis~**
 
  *[Event-Driven Architecture]: An Evolutionary Architectural Style based on Event Sourcing and CQRS design patterns.  More to come...
  *[Event Thinking]: Gartner's term for the foundational concepts around Event-Driven Architectures
-:::
 
-:::info
 **Recovery Axiom:** 
 ## Tracking **"state transition of processing" is required** to enable recovery from prior recorded state -- like nautical waypoints.
 
@@ -157,20 +135,18 @@ dataCollectedEvent.publish(Users.Create)  // Emit trigger event
 * ### Must achieve <u>HADR-as-a-Service</u>.
 
 ### :key: "<u>Embrace Failure</u>" by deploying innate recovery of prior state.
-:::
 
 :rotating_light: If the last state saved is hours old, you lose hours of processing.
 
 #### :rocket: If saved state is millaseconds old, you recover instantly!
 
-:::info
-<i class="fa fa-edit fa-fw"></i> **Events are** fine-grained, immutable <u>**state transition ledger entries**</u> recorded in a **Distributed Log**. 
-:::
+
+**Events are** fine-grained, immutable <u>**state transition ledger entries**</u> recorded in a **Distributed Log**. 
+
 *[Distributed Log]: Distributed logs like Kafka "linearly scale" on commodity hardware and in cloud VMs (Open IaaS).  Blockchain (think BitCoin) adds immutability support to the ledger through encryption, opening up B2B EDA.
 
 ### Deep Dive into Event-Driven Microservices
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IR1NLfaq7PU" frameborder="0"></iframe>
-
 
 ### Summary Comparison of Invocational Styles
 | Properties | Explicit Invocation| Implicit Invocation| Notes |
@@ -199,4 +175,3 @@ the Design of Network-based Software Architectures"](https://www.ics.uci.edu/~fi
 [^PT2]: [Mark Burgess: Promise Theory -- What is it?](https://www.linuxjournal.com/content/promise-theory%E2%80%94what-it)
 
 [^stack]: [Lightbend/Akka: "How the Actor Model Meets the Needs of Modern, Distributed Systems"](https://doc.akka.io/docs/akka/current/guide/actors-motivation.html#the-illusion-of-a-call-stack)
-
