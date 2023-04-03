@@ -29,7 +29,7 @@
 
 ### [Design](https://hackmd.io/@cudl/S1uWCAX0s) & [Architecture](https://hackmd.io/@cudl/rk1cstgRj)
 
-### [Why use Event-Driven Architecture (EDA)](https://hackmd.io/@cudl/SkDOaQXgh)
+### [Why use Event-Driven Architecture (EDA)?](https://hackmd.io/@cudl/SkDOaQXgh)
 ***
 ## Join the Community
 * **Adopt:** Write you next application using ***OpenEMIT***
