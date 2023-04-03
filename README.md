@@ -32,6 +32,6 @@
 ### [Why use Event-Driven Architecture (EDA)?](https://hackmd.io/@cudl/SkDOaQXgh)
 ***
 ## Join the Community
-* **Adopt:** Write you next application using ***OpenEMIT***
-* **Sponsor:** Integrate/Certify your Product 
+* **Customers:** Write you next application using ***OpenEMIT***
+* **Vendors:** Integrate/Certify your Product 
 * **Develop:** [Event Thinking](https://hackmd.io/@cudl/r1j-2-I2f) Rust Developers are always welcome
